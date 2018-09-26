@@ -1,0 +1,23 @@
+{
+  "name": "yl-util",
+  "version": "0.0.6",
+  "description": "some useful utils",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Unfantasy/fs-util.git"
+  },
+  "keywords": [
+    "javascript",
+    "util"
+  ],
+  "author": "Unfantasy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Unfantasy/fs-util/issues"
+  },
+  "homepage": "https://github.com/Unfantasy/fs-util#readme"
+}
