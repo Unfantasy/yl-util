@@ -1,6 +1,6 @@
 {
   "name": "yl-util",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "some useful utils",
   "main": "src/index.js",
   "scripts": {

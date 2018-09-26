@@ -1,6 +1,7 @@
 /**
  * 超出一定字数显示...
- * @param {*} str 
+ * @param str: 目标字段
+ * @param length: 保留的字数
  */
 function showEllipsis(str, length) {
   if (!str) {
