@@ -20,7 +20,7 @@ showEllipsis(str, 4) // 一个矢量...
 使用 `console.log` 打印对象，如果是对象使用 `JSON.parse(JSON.stringify(xx))` 深拷贝，
 ```
 const a = { a: { b: { c : 1 } } };
-log(a); // undefined
+log(a); // { a: { b: { c : 1 } } }
 ```
 
 
