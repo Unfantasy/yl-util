@@ -1,5 +1,6 @@
-import showEllipsis from './utils/showEllipsis.js';
-import pointer from './utils/pointer.js';
+export { default as showEllipsis } from './showEllipsis.js';
+export { default as pointer } from './pointer.js';
+export { default as fetch } from './fetch.js';
 
 /**
  * 将传入的值通过JSON parse 深拷贝之后打印出来
@@ -13,14 +14,3 @@ export function log(param) {
   console.log(JSON.parse(JSON.stringify(param)));
   return JSON.parse(JSON.stringify(param));
 }
-
-export {
-  showEllipsis,
-  pointer,
-};
-
-export default {
-  showEllipsis,
-  pointer,
-  log,
-};
