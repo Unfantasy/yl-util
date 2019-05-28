@@ -63,6 +63,5 @@ export default function request(url, options) {
 
 
   return Promise.race([responsePromise, timeoutPromise])
-    .then(getData)
     .catch(err => ({ err }));
 }

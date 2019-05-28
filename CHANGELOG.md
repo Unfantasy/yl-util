@@ -1,3 +1,7 @@
+## 0.1.0
+
+* fix: fetch fix
+  
 ## 0.0.9
 
 * add 添加封装的 fetch 方法
