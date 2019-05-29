@@ -4,3 +4,4 @@ config/
 scripts/
 build/
 node_modules
+src/utils
