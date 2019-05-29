@@ -2,7 +2,7 @@
 
 * fix: fetch fix
 * add: 添加qs里面的stringify, parse方法
-* add: 添加lodash里面的debounce, throttle方法
+* add: 添加lodash里面的debounce, throttle, isObject方法
 * 添加eslint
   
 ## 0.1.0
