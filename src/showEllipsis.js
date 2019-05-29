@@ -5,18 +5,18 @@
  */
 function showEllipsis(str, length) {
   if (!str) {
-    return;
+    return '';
   }
   if (typeof str !== 'string' || !length) {
     return str;
   }
-  if (Number(length) === NaN) {
+  if (Number.isNaN(Number(length))) {
     return str;
   }
-  if (str.length < length || str.length == length) {
+  if (str.length < length || str.length === Number(length)) {
     return str;
   }
-  return str.substr(Number(length), length) + '...';
+  return `${str.substr(Number(length), length)}...`;
 }
 
 export default showEllipsis;

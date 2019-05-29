@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Unfantasy/fs-util.git"
+    "url": "git+https://github.com/Unfantasy/yl-util.git"
   },
   "keywords": [
     "javascript",
@@ -18,9 +18,9 @@
   "author": "Unfantasy",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Unfantasy/fs-util/issues"
+    "url": "https://github.com/Unfantasy/yl-util/issues"
   },
-  "homepage": "https://github.com/Unfantasy/fs-util#readme",
+  "homepage": "https://github.com/Unfantasy/yl-util#readme",
   "dependencies": {
     "@babel/polyfill": "^7.4.4",
     "qs": "^6.7.0",
@@ -29,6 +29,11 @@
   "devDependencies": {
     "@babel/cli": "^7.4.4",
     "@babel/core": "^7.4.5",
-    "@babel/preset-env": "^7.4.5"
+    "@babel/preset-env": "^7.4.5",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.17.3",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-react": "^7.13.0"
   }
 }

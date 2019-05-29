@@ -1,3 +1,9 @@
+## 0.1.1
+
+* fix: fetch fix
+* add: 添加qs里面的stringify, parse方法
+* 添加eslint
+  
 ## 0.1.0
 
 * fix: fetch fix
