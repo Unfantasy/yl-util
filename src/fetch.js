@@ -24,7 +24,6 @@ function checkStatus(response) {
  */
 export default function request(url, options) {
   const sendOptions = { credentials: 'include', ...options };
-  const responsePromise = fetch(url, sendOptions).then(checkStatus).then(parseJSON);
   const timeoutPromise = new Promise((resolve) => {
     setTimeout(() => {
       // reject(new Error('fetch timeout'));
@@ -60,7 +59,7 @@ export default function request(url, options) {
       sendOptions.body = stringify(sendOptions.body);
     }
   }
-
+  const responsePromise = fetch(url, sendOptions).then(checkStatus).then(parseJSON);
 
   return Promise.race([responsePromise, timeoutPromise])
     .catch(err => ({ err }));
