@@ -1,3 +1,6 @@
+## 0.1.2
+* fix: fetch 判断对象类型修改
+
 ## 0.1.1
 * fix: fetch fix
 * add: 添加qs里面的stringify, parse方法

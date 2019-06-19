@@ -54,7 +54,9 @@ export default function request(url, options) {
     if (
       sendOptions.headers['Content-Type'] === 'application/x-www-form-urlencoded'
       &&
-      typeof sendOptions.body === 'object'
+      sendOptions.body
+      &&
+      Object.prototype.toString.call(sendOptions.body) === '[object Object]'
     ) {
       sendOptions.body = stringify(sendOptions.body);
     }
