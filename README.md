@@ -1,6 +1,15 @@
 # yl-util
 一些好用的工具函数
 
+### getUrlParams
+返回 url 参数
+```
+const params = getUrlParams('?aaa=bbb'); // { aaa: 'bbb' }
+```
+
+### fetch
+对 fetch 进行了一些封装处理
+
 ### pointer
 链式调用，避免报错：Uncaught TypeError: Cannot read property 'xxx' of undefined
 ```
@@ -22,5 +31,11 @@ showEllipsis(str, 4) // 一个矢量...
 const a = { a: { b: { c : 1 } } };
 log(a); // { a: { b: { c : 1 } } }
 ```
+
+### stringify parse
+qs 中的 stringify parse
+
+### debounce throttle isObject
+lodash 中的 debounce throttle isObject
 
 

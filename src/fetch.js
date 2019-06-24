@@ -1,3 +1,6 @@
+/**
+ * fetch 进行封装, 添加超时判断
+ */
 import 'whatwg-fetch';
 import { stringify } from 'qs';
 
