@@ -16,6 +16,7 @@ export function log(param) {
 export { default as showEllipsis } from './showEllipsis';
 export { default as pointer } from './pointer';
 export { default as fetch } from './fetch';
+export { default as getUrlParams } from './getUrlParams';
 export { default as debounce } from './utils/debounce';
 export { default as throttle } from './utils/throttle';
 export { default as isObject } from './utils/isObject';

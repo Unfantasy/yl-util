@@ -1,11 +1,11 @@
 {
   "name": "yl-util",
-  "version": "0.1.2",
+  "version": "0.1.6",
   "description": "some useful utils",
   "main": "lib/index.js",
   "scripts": {
     "test": "",
-    "build": "./node_modules/.bin/babel src --out-dir lib"
+    "build": "./node_modules/.bin/babel src --out-dir lib && npm publish"
   },
   "repository": {
     "type": "git",

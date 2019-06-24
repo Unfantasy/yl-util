@@ -1,3 +1,6 @@
+## 0.1.6
+* add: 添加获取url参数方法 getUrlParams
+  
 ## 0.1.2
 * fix: fetch 判断对象类型修改
 
