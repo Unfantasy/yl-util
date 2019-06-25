@@ -30,14 +30,14 @@ export default function request(url, options) {
   const timeoutPromise = new Promise((resolve) => {
     setTimeout(() => {
       // reject(new Error('fetch timeout'));
-      resolve({ success: false, code: '8888', msg: '登录超时', data: {} });
+      resolve({ success: false, code: 'timeout', msg: '登录超时', data: {} });
     }, options.timeout || 10000);
   });
 
   delete sendOptions.timeout;
 
   // post 默认 application/json 请求
-  if (sendOptions.method === 'POST') {
+  if (sendOptions.method && sendOptions.method.toLowerCase() === 'post') {
     sendOptions.mode = sendOptions.mode || 'cors';
     sendOptions.headers = options.headers || {};
     sendOptions.headers = {
