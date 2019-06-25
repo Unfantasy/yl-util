@@ -1,3 +1,6 @@
+## 0.1.7
+* modify: babel 环境修改
+
 ## 0.1.6
 * add: 添加获取url参数方法 getUrlParams
   
