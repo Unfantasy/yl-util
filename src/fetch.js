@@ -36,8 +36,12 @@ export default function request(url, options) {
 
   delete sendOptions.timeout;
 
-  // post 默认 application/json 请求
-  if (sendOptions.method && sendOptions.method.toLowerCase() === 'post') {
+  // 不指定 header 的情况
+  if (sendOptions.noHeader) {
+    delete sendOptions.noHeader;
+    delete sendOptions.headers;
+    // post 默认 application/json 请求
+  } else if (sendOptions.method && sendOptions.method.toLowerCase() === 'post') {
     sendOptions.mode = sendOptions.mode || 'cors';
     sendOptions.headers = options.headers || {};
     sendOptions.headers = {
@@ -65,11 +69,6 @@ export default function request(url, options) {
     }
   }
 
-  // 不指定 header 的情况
-  if (sendOptions.noHeader) {
-    delete sendOptions.noHeader;
-    delete sendOptions.headers;
-  }
   const responsePromise = fetch(url, sendOptions).then(checkStatus).then(parseJSON);
 
   return Promise.race([responsePromise, timeoutPromise])
