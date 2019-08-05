@@ -64,6 +64,12 @@ export default function request(url, options) {
       sendOptions.body = stringify(sendOptions.body);
     }
   }
+
+  // 不指定 header 的情况
+  if (sendOptions.noHeader) {
+    delete sendOptions.noHeader;
+    delete sendOptions.headers;
+  }
   const responsePromise = fetch(url, sendOptions).then(checkStatus).then(parseJSON);
 
   return Promise.race([responsePromise, timeoutPromise])
