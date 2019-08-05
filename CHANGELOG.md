@@ -1,3 +1,6 @@
+## 0.1.9
+* modify: fetch 添加 noHeader 参数用于不指定 header
+
 ## 0.1.7
 * modify: babel 环境修改
 
