@@ -1,6 +1,11 @@
 # yl-util
 一些好用的工具函数
 
+## 发布
+```
+npm run build
+```
+
 ### getUrlParams
 返回 url 参数
 ```
